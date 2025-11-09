@@ -5,51 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amulya R | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
 <!-- Navbar -->
-<nav class="flex justify-between items-center px-4 py-4 bg-white shadow">
-    <h1 class="text-2xl font-bold text-indigo-700">Amulya R</h1>
-    <div class="space-x-6">
-        <a href="#projects" class="hover:text-indigo-600">Projects</a>
-        <a href="#about" class="hover:text-indigo-600">About</a>
-        <a href="#contact" class="hover:text-indigo-600">Contact</a>
-        <a href="#paper" class="hover:text-indigo-600">Published Papers</a>
+<nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+        <h1 class="text-2xl font-bold text-indigo-700 tracking-wide hover:scale-105 transition-transform duration-300">Amulya R</h1>
+        <div class="hidden md:flex space-x-6">
+            <a href="#projects" class="hover:text-indigo-600 transition-colors">Projects</a>
+            <a href="#about" class="hover:text-indigo-600 transition-colors">About</a>
+            <a href="#paper" class="hover:text-indigo-600 transition-colors">Publications</a>
+            <a href="#contact" class="hover:text-indigo-600 transition-colors">Contact</a>
+        </div>
     </div>
 </nav>
 
-<!-- Hero -->
-<section class="text-center py-16 bg-gradient-to-b from-indigo-100 to-white">
-    <h2 class="text-4xl font-bold mb-4">Hi, I'm Amulya R 👋</h2>
-    <p class="max-w-2xl mx-auto text-lg">
-        M.Tech graduate passionate about <span class="font-semibold text-indigo-600">
-    Machine Learning, Power BI, and Full-Stack Development</span>.
-        I create intelligent systems, insightful dashboards, and secure web applications.
+<!-- Hero Section -->
+<section class="pt-32 pb-20 text-center bg-gradient-to-b from-indigo-100 to-white">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Hi, I'm <span class="text-indigo-700">Amulya R 👋</span></h2>
+    <p class="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed text-gray-700">
+        An <strong>M.Tech graduate</strong> passionate about
+        <span class="text-indigo-600 font-semibold">Machine Learning, Power BI, and Full-Stack Development</span>.
+        I build <span class="font-semibold">intelligent systems</span>,
+        <span class="font-semibold">insightful dashboards</span>, and
+        <span class="font-semibold">secure web applications</span> that turn data into real-world impact.
     </p>
 
     <!-- Resume Buttons -->
-    <div class="mt-10 flex flex-col md:flex-row justify-center items-center gap-4">
+    <div class="mt-10 flex flex-col md:flex-row justify-center items-center gap-6">
         <!-- ML Resume -->
-        <div>
+        <div class="transform hover:scale-105 transition-transform">
             <a href="Amulya_R_ML_DataScientiest_Resume.pdf" target="_blank"
-               class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 block text-center mb-2">
+               class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 block mb-2 font-medium">
                 View ML Resume
             </a>
             <a href="Amulya_R_ML_DataScientiest_Resume.pdf" download
-               class="border border-indigo-600 text-indigo-600 px-5 py-2 rounded-lg hover:bg-indigo-50 block text-center">
+               class="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg hover:bg-indigo-50 block font-medium">
                 Download
             </a>
         </div>
 
         <!-- Power BI Resume -->
-        <div>
+        <div class="transform hover:scale-105 transition-transform">
             <a href="Amulya_R_PowerBI_Data_Analyst_Resume.pdf" target="_blank"
-               class="bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-yellow-600 block text-center mb-2">
+               class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 block mb-2 font-medium">
                 View Power BI Resume
             </a>
             <a href="Amulya_R_PowerBI_Data_Analyst_Resume.pdf" download
-               class="border border-green-500 text-green-600 px-5 py-2 rounded-lg hover:bg-yellow-50 block text-center">
+               class="border border-green-500 text-green-600 px-6 py-3 rounded-lg hover:bg-green-50 block font-medium">
                 Download
             </a>
         </div>
@@ -57,49 +67,69 @@
 </section>
 
 <!-- About -->
-<section id="about" class="py-12 px-8 max-w-5xl mx-auto">
-    <h3 class="text-3xl font-semibold mb-6 text-indigo-700">About Me</h3>
-    <p class="text-lg leading-relaxed">
-        I hold an M.Tech in Computer Network & Engineering from B.M.S College of Engineering
-        and a B.E. in Information Science from Jyothy Institute of Technology.
-        My experience spans data science internships, software development, and published ML research.
+<section id="about" class="py-16 px-8 max-w-5xl mx-auto text-center md:text-left">
+    <h3 class="text-3xl font-semibold mb-6 text-indigo-700 text-center">About Me</h3>
+    <p class="text-lg leading-relaxed text-gray-700">
+        I hold an <strong>M.Tech in Computer Network & Engineering</strong> from B.M.S College of Engineering
+        and a <strong>B.E. in Information Science</strong> from Jyothy Institute of Technology.
+        My experience spans data science internships, full-stack projects, and published ML research — blending technical precision with creative problem-solving.
     </p>
 </section>
 
 <!-- Projects -->
-<section id="projects" class="bg-gray-100 py-12">
+<section id="projects" class="bg-gray-100 py-16">
     <div class="max-w-6xl mx-auto px-8">
-        <h3 class="text-3xl font-semibold mb-8 text-center text-indigo-700">Projects</h3>
+        <h3 class="text-3xl font-semibold mb-10 text-center text-indigo-700">Projects</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Machine Learning Projects -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300">
+                <h4 class="text-2xl font-bold text-gray-800 mb-2">Machine Learning & AI</h4>
+                <p class="text-gray-600 mb-4">Predictive models, customer insights, and intelligent automation projects using Python and Scikit-learn.</p>
+                <a href="ml.html" class="text-indigo-600 font-medium hover:underline">View Details →</a>
+            </div>
 
-        <h4 class="text-2xl font-bold text-gray-700 mb-4">Machine Learning & AI</h4>
-        <div class="bg-white p-6 rounded-xl shadow mb-8">
-            <a href="ml.html" class="text-indigo-600 font-medium hover:underline">Machine Learning Project Details →</a>
-        </div>
-
-        <h4 class="text-2xl font-bold text-gray-700 mb-4">Power BI & Analytics</h4>
-        <div class="bg-white p-6 rounded-xl shadow">
-            <a href="powerbi.html" class="text-indigo-600 font-medium hover:underline">Power BI Project Details →</a>
+            <!-- Power BI Projects -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300">
+                <h4 class="text-2xl font-bold text-gray-800 mb-2">Power BI & Analytics</h4>
+                <p class="text-gray-600 mb-4">Interactive dashboards and business intelligence reports that uncover actionable data insights.</p>
+                <a href="powerbi.html" class="text-indigo-600 font-medium hover:underline">View Details →</a>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="py-12 px-8 text-center">
-    <h3 class="text-3xl font-semibold mb-4 text-indigo-700">Contact Me</h3>
-    <p class="mb-4">📧 amulyajamadagni@gmail.com  |  📞 9113227127  |  📍 Bengaluru, India</p>
-    <a href="https://www.linkedin.com/in/amulya-r-4612931b9" class="text-indigo-600 font-medium hover:underline">LinkedIn →</a>
-</section>
-<section id="paper" class="py-12 px-8 text-center">
-    <h3 class="text-3xl font-semibold mb-4 text-indigo-700">Published Papers</h3>
-    <a href="https://www.ijsdr.org/papers/IJSDR2307177.pdf" class="text-indigo-600 font-medium hover:underline">Comparison and Analysis of Various Machine
-        Learning and Deep Learning Algorithms for Malware
-        Detection System</a><br><br>
-    <a href="https://www.ijert.org/online-attendance-system-using-machine-learning-algorithms" class="text-indigo-600 font-medium hover:underline">Online Attendance System using Machine Learning Algorithms</a>
+<!-- Publications -->
+<section id="paper" class="py-16 px-8 bg-white text-center">
+    <h3 class="text-3xl font-semibold mb-6 text-indigo-700">Published Papers</h3>
+    <div class="space-y-4">
+        <a href="https://www.ijsdr.org/papers/IJSDR2307177.pdf" target="_blank"
+           class="block text-indigo-600 font-medium hover:underline">
+            📄 Comparison and Analysis of Various Machine Learning and Deep Learning Algorithms for Malware Detection System
+        </a>
+        <a href="https://www.ijert.org/online-attendance-system-using-machine-learning-algorithms" target="_blank"
+           class="block text-indigo-600 font-medium hover:underline">
+            📄 Online Attendance System using Machine Learning Algorithms
+        </a>
+    </div>
 </section>
 
+<!-- Contact -->
+<section id="contact" class="py-16 px-8 text-center bg-gray-100">
+    <h3 class="text-3xl font-semibold mb-4 text-indigo-700">Contact Me</h3>
+    <p class="mb-6 text-lg text-gray-700">
+        📧 <a href="mailto:amulyajamadagni@gmail.com" class="hover:underline text-indigo-600">amulyajamadagni@gmail.com</a>
+        | 📞 9113227127 | 📍 Bengaluru, India
+    </p>
+    <a href="https://www.linkedin.com/in/amulya-r-4612931b9"
+       class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 font-medium transition-colors">
+        Connect on LinkedIn →
+    </a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white py-6 text-center text-gray-600 border-t">
+    <p>© 2025 Amulya R. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
-
-
-
