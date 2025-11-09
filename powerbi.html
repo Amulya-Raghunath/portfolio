@@ -1,68 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amulya R | Power BI Portfolio</title>
+    <title>Power BI Portfolio | Amulya R</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {font-family: Arial, sans-serif; margin: 0; padding: 0; background:#fafafa;}
-        header {background:#1e3a8a; color:#fff; padding:40px 20px; text-align:center;}
-        h1,h2 {margin:0;}
-        .container {width:90%; max-width:900px; margin:20px auto;}
-        .project {background:#fff; padding:20px; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 6px rgba(0,0,0,.08);}
-        .project img {width:100%; border-radius:6px; margin:10px 0;}
-        .btn {display:inline-block; padding:10px 14px; border-radius:6px; text-decoration:none; margin-top:8px;}
-        .view-btn {background:#2563eb; color:#fff;}
-        .code-btn {background:#10b981; color:#fff;}
-        footer {text-align:center; padding:20px; color:#555;}
+        html {
+          scroll-behavior: smooth;
+        }
     </style>
 </head>
-<body>
-<header>
-    <h1>Power BI Portfolio</h1>
-    <p>Amulya R — Data Analyst | Power BI | SQL | Python</p>
-    <a href="Amulya_R_PowerBI_Data_Analyst_Resume.pdf" target="_blank" style="background:#10b981;color:#fff;padding:10px 14px;border-radius:6px;text-decoration:none;">Download Resume</a>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+<!-- Header -->
+<header class="bg-indigo-700 text-white text-center py-16 shadow-md">
+    <h1 class="text-4xl md:text-5xl font-bold mb-3">Power BI Portfolio</h1>
+    <p class="text-lg opacity-90 mb-6">
+        <span class="font-semibold">Amulya R</span> — Data Analyst | Power BI | SQL | Python
+    </p>
+    <a href="Amulya_R_PowerBI.pdf" target="_blank"
+       class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium shadow transition-all">
+        ⬇️ Download Resume
+    </a>
 </header>
 
-<div class="container">
-    <section>
-        <h2>Projects</h2>
+<!-- Projects Section -->
+<main class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-semibold text-indigo-700 mb-8 text-center">Projects</h2>
 
-        <!-- Fashion Retail Dashboard -->
-        <div class="project">
-            <h3>🛍️ Fashion Retail Sales Dashboard</h3>
-            <p>End-to-end Power BI solution analyzing sales, customers, categories, and regions to discover revenue drivers & improve marketing strategies.</p>
-            <ul>
-                <li>120k+ records processed</li>
-                <li>Star Schema, DAX Time-Intelligence, drill-downs</li>
-                <li>Sales, repeat customers, high-profit categories</li>
-            </ul>
+    <!-- Project Card -->
+    <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-8">
+        <h3 class="text-2xl font-bold text-gray-800 mb-2">🛍️ Fashion Retail Sales Dashboard</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+            End-to-end <strong>Power BI solution</strong> analyzing sales, customers, categories, and regional performance
+            to uncover revenue drivers and marketing insights.
+        </p>
 
-            <!-- Dashboard Preview -->
-            <img src="https://raw.githubusercontent.com/Amulya-Raghunath/Fashion_Data_Analysis/main/ScreenShots/Sales_Overview.png" alt="Fashion Dashboard Preview" />
+        <ul class="list-disc list-inside text-gray-700 mb-6">
+            <li>Processed 120k+ transaction records</li>
+            <li>Implemented Star Schema & DAX time intelligence</li>
+            <li>Interactive drill-through and category-level analysis</li>
+        </ul>
 
-            <!-- View Dashboard Pages -->
-            <a class="btn view-btn"
-               href="https://github.com/Amulya-Raghunath/Fashion_Data_Analysis/tree/main/ScreenShots"
-               target="_blank">
-                View Dashboard Screenshots
+        <!-- Dashboard Preview -->
+        <img src="https://raw.githubusercontent.com/Amulya-Raghunath/Fashion_Data_Analysis/main/ScreenShots/Sales_Overview.png"
+             alt="Fashion Dashboard Preview"
+             class="rounded-xl shadow-md mb-6 hover:scale-105 transition-transform duration-300" />
+
+        <div class="flex flex-wrap gap-4">
+            <a href="https://github.com/Amulya-Raghunath/Fashion_Data_Analysis/tree/main/ScreenShots"
+               target="_blank"
+               class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition-all">
+                📊 View Dashboard Screenshots
             </a>
-            <!-- GitHub Repo -->
-            <a class="btn code-btn" href="https://github.com/Amulya-Raghunath/Fashion_Data_Analysis" target="_blank">View Source Code</a>
 
+            <a href="https://github.com/Amulya-Raghunath/Fashion_Data_Analysis"
+               target="_blank"
+               class="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition-all">
+                💻 View Source Code
+            </a>
+
+            <a href="index.html"
+               class="border border-gray-400 text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-100 transition-all">
+                ⬅ Back to Home
+            </a>
         </div>
-<a href="index.html" class="btn back-btn">⬅ Back to Home</a>
-    </section>
-</div>
+    </div>
 
-<footer>
-    © 2025 Amulya R — Power BI Portfolio
+    <!-- Add More Projects -->
+    <!-- Example:
+    <div class="bg-white rounded-2xl shadow-md p-8 mt-10">
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">✈️ Airline Satisfaction Dashboard</h3>
+      <p class="text-gray-700 mb-4">Power BI report analyzing customer satisfaction, flight experience, and feature importance using ML integration.</p>
+      <img src="..." alt="Airline Dashboard" class="rounded-lg shadow mb-4" />
+      <a href="#" class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700">View Project</a>
+    </div>
+    -->
+
+</main>
+
+<!-- Footer -->
+<footer class="text-center py-6 text-gray-600 border-t bg-white">
+    © 2025 <strong>Amulya R</strong> — Power BI Portfolio
 </footer>
+
 </body>
 </html>
-
-
-
-
-
