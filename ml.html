@@ -4,92 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malware Detection — Machine Learning Project | Amulya R</title>
+    <title>Machine Learning Projects | Amulya R</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {font-family: Arial, sans-serif; margin: 0; padding: 0; background:#fafafa;}
-          header {background:#1e3a8a; color:#fff; padding:40px 20px; text-align:center;}
-          h1,h2 {margin:0;}
-          .container {width:90%; max-width:900px; margin:20px auto;}
-          .project {background:#fff; padding:20px; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 6px rgba(0,0,0,.08);}
-          .project img {width:100%; border-radius:6px; margin:10px 0;}
-          .btn {display:inline-block; padding:10px 14px; border-radius:6px; text-decoration:none; margin-top:8px;}
-          .view-btn {background:#2563eb; color:#fff;}
-          .code-btn {background:#10b981; color:#fff;}
-          footer {text-align:center; padding:20px; color:#555;}
+        html {
+          scroll-behavior: smooth;
+        }
     </style>
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<header class="hero small-hero">
-    <h1>Machine Learning</h1>
-    <p> Amulya R|Machine Learning|Deep Learning|Python </p>
+<!-- Header -->
+<header class="bg-indigo-700 text-white text-center py-16 shadow-lg">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2">Machine Learning Projects</h1>
+    <p class="text-lg opacity-90">
+        <span class="font-semibold">Amulya R</span> | Machine Learning • Deep Learning • Python
+    </p>
 </header>
 
-<section class="container project-detail">
-    <h2>Malware Detection using ML & Deep Learning</h2>
-    <h3>Project Overview</h3>
-    <p>
-        Developed an ML & Deep Learning based malware detection system using Kaggle & CIC-MalMem2022 datasets.
-        Benchmarked classical models vs deep neural networks for binary & multi-class classification.
-    </p>
+<!-- Malware Detection Project -->
+<section class="max-w-5xl mx-auto px-6 py-12">
+    <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-8">
+        <h2 class="text-3xl font-semibold text-indigo-700 mb-4">🧠 Malware Detection using ML & Deep Learning</h2>
 
-    <h3>Tech Stack</h3>
-    <ul>
-        <li>Python, Google Colab</li>
-        <li>Scikit-Learn, TensorFlow, XGBoost</li>
-        <li>Matplotlib, Seaborn</li>
-    </ul>
-
-    <h3>Key Achievements</h3>
-    <ul>
-        <li>~100% accuracy in binary malware detection</li>
-        <li>~99.98% accuracy in multi-class classification</li>
-        <li>Performed feature engineering + correlation analysis</li>
-    </ul>
-
-
-    <a class="btn view-btn"
-       href="https://github.com/Amulya-Raghunath/Malware-Detection-Using-Machine-Learning-Deep-Learning/tree/main/ScreenShots"
-       target="_blank">
-        Results Screenshots
-    </a>
-    <!-- GitHub Repo -->
-    <a class="btn code-btn" href="https://github.com/Amulya-Raghunath/Malware-Detection-Using-Machine-Learning-Deep-Learning" target="_blank">View Github</a></section>
-    <section class="container project-detail">
-        <h2>Online Attendance System using Facial Recognition</h2>
-        <h3>Project Overview</h3>
-        <p>
-            Developed a computer-vision system leveraging OpenCV, Haar-Cascade face detection, and LBPH face recognition to authenticate users and record attendance in real time. Integrated Python GUI, MySQL database, and role-based login for students and faculty.
+        <h3 class="text-xl font-medium text-gray-800 mt-4 mb-2">Project Overview</h3>
+        <p class="text-gray-700 leading-relaxed">
+            Developed an advanced malware detection system using <strong>ML & Deep Learning</strong> models trained on
+            <strong>Kaggle</strong> and <strong>CIC-MalMem2022</strong> datasets.
+            Compared classical algorithms vs neural networks for both binary and multi-class malware classification.
         </p>
 
-        <h3>Tech Stack</h3>
-        <ul>
-            <li>Python</li>
-                <li>Tkinter, OpenCV, NumPy</li>
-                <li>LBPH (Local Binary Patterns Histograms), Haar Cascade</li>
-                <Li>Database: MySQL</li>
-                      </ul>
-
-        <h3>Key Achievements</h3>
-        <ul>
-            <li>Two way aythentication for faculties</li>
-            <li>Simple to implement</li>
-            <li>Enabled CSV + MySQL reporting, allowing admins to export, store, and audit attendance data.</li>
-            <li>Optimized webcam input pipeline for smooth real-time face capture and recognition.</li>
+        <h3 class="text-xl font-medium text-gray-800 mt-6 mb-2">Tech Stack</h3>
+        <ul class="list-disc list-inside text-gray-700">
+            <li>Python, Google Colab</li>
+            <li>Scikit-learn, TensorFlow, XGBoost</li>
+            <li>Matplotlib, Seaborn</li>
         </ul>
 
-        <a class="btn view-btn"
-           href="https://youtu.be/RVT9-5oA5Sc"
-           target="_blank">
-            Demo
-        </a>
-        <!-- GitHub Repo -->
-        <a class="btn code-btn" href="https://github.com/Amulya-Raghunath/Malware-Detection-Using-Machine-Learning-Deep-Learning" target="_blank">View Github</a>
+        <h3 class="text-xl font-medium text-gray-800 mt-6 mb-2">Key Achievements</h3>
+        <ul class="list-disc list-inside text-gray-700">
+            <li>Achieved ~100% accuracy in binary malware detection</li>
+            <li>99.98% accuracy for multi-class classification</li>
+            <li>Performed detailed feature engineering and correlation heatmap analysis</li>
+        </ul>
 
-    <a href="index.html" class="btn back-btn">⬅ Back to Home</a>
+        <div class="mt-6 flex flex-wrap gap-4">
+            <a href="https://github.com/Amulya-Raghunath/Malware-Detection-Using-Machine-Learning-Deep-Learning/tree/main/ScreenShots"
+               target="_blank"
+               class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition-colors">
+                📸 Results Screenshots
+            </a>
+
+            <a href="https://github.com/Amulya-Raghunath/Malware-Detection-Using-Machine-Learning-Deep-Learning"
+               target="_blank"
+               class="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition-colors">
+                💻 View GitHub
+            </a>
+        </div>
+    </div>
 </section>
+
+<!-- Attendance System Project -->
+<section class="max-w-5xl mx-auto px-6 py-12">
+    <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-8">
+        <h2 class="text-3xl font-semibold text-indigo-700 mb-4">🎓 Online Attendance System using Facial Recognition</h2>
+
+        <h3 class="text-xl font-medium text-gray-800 mt-4 mb-2">Project Overview</h3>
+        <p class="text-gray-700 leading-relaxed">
+            Built a real-time attendance system using <strong>OpenCV</strong>, <strong>Haar Cascade</strong>, and
+            <strong>LBPH Face Recognition</strong>. Integrated with a Python GUI and MySQL database for secure, role-based
+            authentication for students and faculty.
+        </p>
+
+        <h3 class="text-xl font-medium text-gray-800 mt-6 mb-2">Tech Stack</h3>
+        <ul class="list-disc list-inside text-gray-700">
+            <li>Python, Tkinter</li>
+            <li>OpenCV, NumPy</li>
+            <li>LBPH (Local Binary Pattern Histogram), Haar Cascade</li>
+            <li>Database: MySQL</li>
+        </ul>
+
+        <h3 class="text-xl font-medium text-gray-800 mt-6 mb-2">Key Achievements</h3>
+        <ul class="list-disc list-inside text-gray-700">
+            <li>Implemented two-way authentication for faculty users</li>
+            <li>Real-time face recognition with smooth webcam input</li>
+            <li>Enabled CSV + MySQL attendance reporting for admins</li>
+            <li>Simple, scalable system design with minimal hardware needs</li>
+        </ul>
+
+        <div class="mt-6 flex flex-wrap gap-4">
+            <a href="https://youtu.be/RVT9-5oA5Sc"
+               target="_blank"
+               class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition-colors">
+                ▶️ Watch Demo
+            </a>
+
+            <a href="https://github.com/Amulya-Raghunath/Malware-Detection-Using-Machine-Learning-Deep-Learning"
+               target="_blank"
+               class="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition-colors">
+                💻 View GitHub
+            </a>
+
+            <a href="index.html"
+               class="border border-gray-400 text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-100 transition-colors">
+                ⬅ Back to Home
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-6 text-gray-600 border-t bg-white">
+    <p>© 2025 Amulya R. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
-
